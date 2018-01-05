@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>YFJ | Your Fit Journey</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+			<div class="navigation">
+
+<!-- navigatie -->
+				<nav>
+					<ul>
+						<li><a class="active" href="#">Home</a></li>
+						<li><a href="pages/voeding.html">Voeding</a></li>
+						<li><a href="#blueprint">Calculator</a></li>
+						<li><a href="pages/about-me.html">About</a></li>
+					</ul>
+					<a class="logo" href="index.html">Your fit journey</a>
+				</nav>
+			</div>
+
+		</header>
+
+<!-- showcase -->
+		<section class="animated fadeIn showcase">
+			<div class="container">
+					<h1 class="animatedText">Jouw lichaam, jouw plan, jouw resultaat!</h1>
+					
+					<a class="animated pulse startbutton" href="pages/voeding.html">Start hier!</a>
+			</div>
+		</section>
+
+<!-- Klok -->
+		<section class="javafun">
+				<div id="clock">
+					<h2>De tijd tikt...</h2>
+					<p id="clo"></p>
+					<h2>Wanneer begin jij?</h2>
+
+				</div>
+		</section>
+
+<!-- Bereken je caloriebehoefte -->
+		<section id="blueprint">
+				<div class="container">
+					<div class="goals">
+					<h2>Bereken je caloriebehoefte</h2>
+    					<form id="calories" name="calories">
+    						
+    						<p>Wat is je huidige gewicht? (in kg)</p>
+    						
+    						<input id="myNumber" type="number"  value="1"> kg<br>
+    						<input id = "mc" type = "radio"  name = "vraag2" value = "Afvallen"> Afvallen<br>
+							<input id = "mc" type = "radio"  name = "vraag2" value = "Onderhouden"> Onderhouden<br>
+							<input id = "mc" type = "radio"  name = "vraag2" value = "Aankomen"> Aankomen<br><br />
+							<input id = "button" type = "button" value = "Bereken mijn caloriebehoefte" onclick = "calculateCalories();">
+
+    					</form>
+    				</div>
+
+    				<div class="goals">
+    						<p id = "caloriesneeded"></p>
+    				</div>
+				</div>
+			</section>
+
+<!-- Banner voor voeding pagina -->
+		<section>
+			<div class="nutri">
+				<a href="pages/voeding.html" class="first nutriban">Voeding</a>
+			</div>
+		</section>
+
+<!-- Stukken voor voeding pagina, 3 kolommen -->		
+		<section class="workoutgoals">
+					<div class="box">
+        				<img src="images/thumb-down.svg">
+          				<h3>Goed vs Slecht</h3>
+          				<p>Binnen de fitnesswereld wordt er vaak gesproken over dit onderwerp. Veel mensen zijn ervan overtuigd van de aanpak waarbij er wordt geloofd in goede en slechte voedingssoorten. Volgens deze mensen is het enkel mogelijk om resultaat te bereiken, waneer je enkel gezonde voeding eet. Natuurlijk is dit mogelijk, maar is dit lastig vol te houden. Dit kan makkelijker!</p><a class="morebutt" href="pages/voeding.html">Lees verder</a>
+        			</div>
+        
+        			<div class="box">
+          				<img src="images/thumb-good.svg">
+         				<h3>IIFYM</h3>
+          				<p>Een bekende vorm van diëten tegenwoordig is IIFYM. Dit staat voor If It Fits Your Macros. Het houdt in dat je kan eten wat je wilt zolang je voldoet aan je dagelijkse calorieën. Zelf ben ik hier een groot voorstander van, omdat dit een manier is om doelen te behalen op de langere termijn.</p><a class="morebutt" href="pages/voeding.html">Lees verder</a>
+       				</div>
+        
+        			<div class="box">
+          				<img src="images/thumb-up.svg">
+          				<h3>Macronutriënten</h3>
+          				<p>Een lichaam heeft macronutriënten nodig om te zorgen dat het trainen effect heeft. Een nutriënt is een ander woord voor voedingsstof. Macro betekent groot; en macronutriënten zijn daarom voedingsstoffen die je lichaam in grote mate nodig heeft. Macronutriënten worden ingedeeld in drie grote groepen: Eiwitten, Koolhydraten en Vetten</p><a class="morebutt" href="pages/voeding.html">Lees verder</a>
+        			</div>
+      	</section>
+<!-- Banner voor about me pagina -->
+      	<section>
+			<div class="aboutme">
+				<a href="pages/about-me.html" class="second aboutdescr">About Me</a>
+			</div>
+		</section>
+
+<!-- footer -->
+      	<footer>
+        	<h5>Ravi Ramcharan, Copyright &copy; 2018</h5>
+        </footer>
+		
+<!-- scripts -->		
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/voedingbanner.js"></script>
+		<script src="js/navigation.js"></script>
+		<script src="js/clock.js"></script>
+		<script src="js/script.js"></script>
+		
+		
+	</body>
+</html>
